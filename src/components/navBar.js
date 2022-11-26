@@ -23,17 +23,22 @@ export const Navbar = () => {
 
         return () => window.removeEventListener("scroll", onScroll);
     })
+
+const onUpdateActiveLink = (value) => {
+  setActiveLink(value);
+}
+
     return (
-        <Navbar expand="lg">
+        <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
       <Container>
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link href="#resume">Resume</Nav.Link>
+            <Nav.Link href="#home" className= {activeLink === 'home' ? 'active navbar-link' : 'navbar-link' } onClick={() => onUpdateActiveLink('home')} >Home</Nav.Link>
+            <Nav.Link href="#projects" className= {activeLink === 'projects' ? 'active navbar-link' : 'navbar-link' } onClick={() => onUpdateActiveLink('home')}>Projects</Nav.Link>
+            <Nav.Link href="#contact" className= {activeLink === 'contact' ? 'active navbar-link' : 'navbar-link' } onClick={() => onUpdateActiveLink('home')}>Contact</Nav.Link>
+            <Nav.Link href="#resume" className= {activeLink === 'resume' ? 'active navbar-link' : 'navbar-link' } onClick={() => onUpdateActiveLink('home')}>Resume</Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
