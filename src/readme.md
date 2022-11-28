@@ -1,14 +1,18 @@
 TODO: 
 
+** NOT ABLE TO get the browser to display anything
+
 // Add to Assets folder
     // add custom fonts
     // add images project screenshots
+        Projects
+        1. Dream Job Finder
+        2. Employee Tracker
+        3. Note Taker
+        4. Readme Generator
+        5. Work Scheduler
+        6. Ecommerce Back-end
 
-
-// Mobile First Design
-    // Should look professional & polished
-    // animations?
-    // react component library
 
 // portfolio color scheme
     // black, gray, gold
