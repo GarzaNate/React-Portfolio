@@ -1,8 +1,8 @@
 TODO: 
 
 // Add to Assets folder
-    // add fonts to assets folder
-    // add images (logo?, project screenshots)
+    // add custom fonts
+    // add images project screenshots
 
 
 // Mobile First Design
