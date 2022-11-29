@@ -15,8 +15,8 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
-  color: #fff !important; 
+  /* background-color: #121212 !important;
+  color: #fff !important;  */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal;
 }
 
+/* trying to move nav links to the right */
+#nav-right {
+  margin-right: auto !important;
+}
 
 
 

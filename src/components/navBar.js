@@ -1,34 +1,32 @@
 import React from "react";
-import { Nav, Navbar, Container } from "react-bootstrap";
 
-function NavBar({ currentPage, setCurrentPage }) {
-  const pages = ["About", "Portfolio", "Resume", "Contact"]
+function NavBar() {
+  // const pages = ["About", "Portfolio", "Resume", "Contact"]
 
   return (
-    <Navbar expand="lg" >
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            {pages.map((page) => (
-              <Nav.Link className={currentPage === page ? "nav-item active" : "nav-item"} key={page}>
-                <a href={"#" + page.toLowerCase()} onClick= {() => setCurrentPage(page)} className={currentPage === page ? "nav-item active" : "nav-item"}>
-                  {page}
-                </a>
-              </Nav.Link>
-            ))}
-          </Nav>
-          <span className="navbar-text">
-            <div className="social-icon">
-              {/* <a href="#"><img src={} alt="" /></a>
-                <a href="#"><img src={} alt="" /></a>
-                <a href="#"><img src={} alt="" /></a> */}
-            </div>
-          </span>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <a className="navbar-brand" href="#">Josue Garza</a>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto nav-right">
+          <li className="nav-item active">
+            <a className="nav-link" href="#about">About Me<span className="sr-only">(current)</span></a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#resume">Resume</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };
 

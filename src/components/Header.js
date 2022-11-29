@@ -5,7 +5,7 @@ function Header() {
 
     return (
         <header>
-           <h1>Josue Garza</h1>
+           <h1>Full-Stack Web Developer</h1>
         </header>
     )
 }
