@@ -1,11 +1,13 @@
 import React from "react";
+import NavBar from "./NavBar";
 
-
-function Header() {
-
+function Header({pages, currentPage, setCurrentPage}) {
+    
+    
     return (
-        <header>
+        <header className="bg-light">
            <h1>Full-Stack Web Developer</h1>
+           <NavBar currentPage={currentPage} setCurrentPage={setCurrentPage} />
         </header>
     )
 }
