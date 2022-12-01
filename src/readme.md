@@ -45,19 +45,3 @@ TODO:
 
 // App.js
 
-
-
- <Router>
-        <Header >
-          <NavBar currentPage={currentPage} setCurrentPage={setCurrentPage}>
-          </NavBar>
-        </Header>
-        <main>
-          <Routes>
-            <Route path="/" element={<About />}/>
-            <Route path="/portfolio" element={<Portfolio />}/>
-          </Routes>
-          {/* <div> {renderPage(currentPage)} </div> */}
-        </main>
-        <Footer />
-      </Router>
