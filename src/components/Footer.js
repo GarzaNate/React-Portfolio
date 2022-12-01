@@ -4,7 +4,7 @@ function Footer() {
 
     return (
         <div>
-            <footer className=" footer text-center text-white" style="background-color: #f1f1f1;">
+            <footer className=" footer text-center text-white" style={{backgroundColor: "light"}}>
                 {/* <!-- Grid container --> */}
                 <div className="container pt-4">
                     {/* <!-- Section: Social media --> */}
@@ -66,7 +66,7 @@ function Footer() {
                 </div>
                 {/* Grid container */}
 
-                <div className="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <div className="text-center text-dark p-3" style={{backgroundColor: "lightgray"}}>
                     © 2020 Copyright:
                     <a className="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
                 </div>

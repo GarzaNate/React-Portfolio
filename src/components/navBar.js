@@ -6,7 +6,7 @@ function NavBar({ currentPage, setCurrentPage }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-center">
       <div >
-      <a className="navbar-brand me-auto" href="#about">Josue Garza</a>
+      <a className="navbar-brand me-auto" href="#about" onClick= {() => setCurrentPage("about")}>Josue Garza</a>
       </div>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
