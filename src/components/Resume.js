@@ -3,6 +3,9 @@ import React from "react";
 function Resume() {
     return (
         <div>
+            <p>
+                Download my <a href="https://www.linkedin.com/">resume</a>
+            </p>
             <div className="card-group">
                 <div className="card">
                     <div className="card-body">

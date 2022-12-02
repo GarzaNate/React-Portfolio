@@ -1,8 +1,13 @@
 import React from "react";
+import Project from "./Project";
+
 
 function Portfolio() {
     return (
-        <h2>portfolio</h2>
+        <div>
+            <p>Here are a few projects I've made!</p>
+            <Project />
+        </div>
     )
 }
 
