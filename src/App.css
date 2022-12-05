@@ -1,4 +1,11 @@
 /* Default CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+:root {
+  --primary-color: #131086;
+  --secondary-color: #b621f3;
+}
 
 * {
   margin: 0;
@@ -6,28 +13,53 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 75px;
-}
-
 body {
   font-weight: 400;
+  font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   position: relative;
-  /* background-color: #121212 !important;
-  color: #fff !important;  */
+  background: linear-gradient(45deg, #131086, #b621f3 );
 }
-
 
 main {
-  margin-top: 25vh;
+  margin: 25vh;
 }
+
+footer {
+  background-color: #808080;
+}
+
+
+.nav-background {
+  background-color: #282c34;
+  color: #fff;
+}
+
+.about-card {
+  background-color: lightgrey;
+  opacity: .3;
+  justify-content: center;
+}
+
+.link {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
 .App {
   text-align: center;
+  justify-content: center;
 }
 
 .App-logo {

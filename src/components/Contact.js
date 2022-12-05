@@ -1,24 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
+import validateEmail from '../utils/helpers';
 
 function Contact() {
+    
+    const [formState, setFormState] = useState({
+        name: '',
+        email: '',
+        message: '',
+    });
+
+    const [errorMessage, setErrorMessage] = useState('');
+    const { email, name, message} = formState;
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        if (!errorMessage) {
+            console.log('Submit Form', formState)
+        }
+    };
+    
+    const handleChange = (event) => {
+        if (event.target.name === 'email') {
+            const isValid = validateEmail(event.target.value);
+            if (!isValid) {
+              setErrorMessage('Your email is invalid.');
+            } else {
+              setErrorMessage('');
+            }
+          } else {
+            if (!event.target.value.length) {
+              setErrorMessage(`${event.target.name} is required.`);
+            } else {
+              setErrorMessage('');
+            }
+          }
+          if (!errorMessage) {
+            setFormState({ ...formState, [event.target.name]: event.target.value });
+            console.log('Handle Form', formState);
+          }
+    }
+    
+    
     return (
         <div>
-            <div className="card" style={{width: "auto"}}>
-                <div className="card-body">
-                    <h5 className="card-title">Contact Me!</h5>
-                    <p className="card-text">Here are a few ways to get in contact with me.</p>
+            <form className="container" onSubmit={handleSubmit}>
+                <div className="form-group">
+                    <label for="exampleFormControlInput1" defaultValue={name}>Name</label>
+                    <input onBlur={handleChange} type="name" className="form-control" id="exampleFormControlInput1" placeholder="John Doe"></input>
                 </div>
-                <ul className="list-group list-group-flush">
-                    <li className="list-group-item">Email</li>
-                    <li className="list-group-item">Phone</li>
-                    <li className="list-group-item">LinkedIn</li>
-                    <li className="list-group-item">...</li>
-                </ul>
-                <div className="card-body">
-                    <a href="#" className="card-link">Card link</a>
-                    <a href="#" className="card-link">Another link</a>
+                <div className="form-group">
+                    <label for="exampleFormControlInput1" defaultValue={email}>Email address</label>
+                    <input onBlur={handleChange}type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"></input>
                 </div>
-            </div>
+                <div className="form-group">
+                    <label for="exampleFormControlTextarea1">Leave a message!</label>
+                    <textarea onBlur={handleChange}className="form-control" id="exampleFormControlTextarea1" rows="3" defaultValue={message}></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     )
 }

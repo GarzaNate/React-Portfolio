@@ -6,7 +6,7 @@ function Header({ pages, currentPage, setCurrentPage }) {
 
     return (
         <div className="fixed-top">
-            <header className="bg-light">
+            <header className="nav-background">
                 <h1>Full-Stack Web Developer</h1>
                 <NavBar currentPage={currentPage} setCurrentPage={setCurrentPage} />
             </header>

@@ -32,7 +32,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="container">
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage}>
       </Header>
       <main>

@@ -1,10 +1,10 @@
 import React from "react";
 import dreamJob from '../assets/images/dreamJob.png';
-import eCommerce from'../assets/images/eCommerceRoute.png';
-import employeeTracker from'../assets/images/employeeTracker.png';
+import eCommerce from '../assets/images/eCommerceRoute.png';
+import employeeTracker from '../assets/images/employeeTracker.png';
 import textEditor from '../assets/images/jateTextEditor.png';
 import noteTaker from '../assets/images/noteTakerApp.png';
-import  teamGenerator from '../assets/images/teamGenerator.png';
+import teamGenerator from '../assets/images/teamGenerator.png';
 
 
 // an array of projects
@@ -54,17 +54,21 @@ function Project() {
 
     return (
         <div className="container">
-            {projects.map((projects) => 
-            <div className="card" style={{"width": "18rem"}}>
-            <div className="card-body">
-              <h5 className="card-title">{projects.name}</h5>
-            </div>
-            <img className="card-img-top" src={projects.image} alt="Project Pictures"></img>
-            <div className="card-body">
-              <a href="#" className="card-link">Github Repo</a>
-              <a href="#" className="card-link">Deployed Link</a>
-            </div>
-          </div>)}
+            {projects.map((projects) =>
+                <div className="row">
+                    <div className="col">
+                        <div className="card" style={{ "width": "18rem" }}>
+                            <div className="card-body">
+                                <h5 className="card-title">{projects.name}</h5>
+                            </div>
+                            <img className="card-img-top" src={projects.image} alt="Project Pictures"></img>
+                            <div className="card-body">
+                                <a href="#" className="card-link">Github Repo</a>
+                                <a href="#" className="card-link">Deployed Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>)}
         </div>
     )
 }
