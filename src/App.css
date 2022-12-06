@@ -3,8 +3,9 @@
 
 
 :root {
-  --primary-color: #131086;
-  --secondary-color: #b621f3;
+  --primary-color: #211A1E;
+  --secondary-color: #C3423F;
+  --section-color: #7C8483;
 }
 
 * {
@@ -18,7 +19,7 @@ body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   position: relative;
-  background: linear-gradient(45deg, #131086, #b621f3 );
+  background: #211A1E;
 }
 
 main {
@@ -26,17 +27,18 @@ main {
 }
 
 footer {
-  background-color: #808080;
+  background-color: var(--secondary-color);
+  width: 100%
 }
 
 
 .nav-background {
-  background-color: #282c34;
+  background-color: #C3423F;
   color: #fff;
 }
 
 .about-card {
-  background-color: lightgrey;
+  background-color: var(--section-color);
   opacity: .3;
   justify-content: center;
 }

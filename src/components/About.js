@@ -3,8 +3,8 @@ import React from "react";
 function About() {
 
     return (
-        <div className="container ">
-            <div className="card" style={{width: "18rem"}}>
+        <div className="container">
+            <div className="card" style={{width: "50rem", height: "20rem"}}>
                 <div className="card-body">
                     <h5 className="card-title">About Me</h5>
                     <h6 className="card-subtitle mb-2 text-muted">Full-stack Dev</h6>

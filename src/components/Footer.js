@@ -1,11 +1,10 @@
-import React from "react";
-
+import React from "react"
 //need a third social media link
 
 function Footer() {
 
     return (
-        <div className="">
+        <div>
             <footer className=" footer text-center text-white" >
                 <div className="text-center p-3">
                     <a
@@ -13,7 +12,7 @@ function Footer() {
                         href="https://www.linkedin.com/in/josue-garza-b8b47623b/"
                         role="button"
                         data-mdb-ripple-color="dark"
-                    ><i className="fab fa-linkedin link">LinkedIn</i>
+                    ><i class="bi bi-linkedin dark">linkedin</i>
                     </a>
                     <a
                         className="btn btn-link btn-floating btn-lg m-1"

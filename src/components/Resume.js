@@ -3,7 +3,7 @@ import React from "react";
 function Resume() {
     return (
         <div>
-            <p>
+            <p className="text-white">
                 Download my <a href="https://www.linkedin.com/">resume</a>
             </p>
             <div className="card-group">
