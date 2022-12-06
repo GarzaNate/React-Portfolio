@@ -53,10 +53,11 @@ function Project() {
     ]
 
     return (
-        <div className="container">
+        <div style={{
+        display: "flex", flexWrap: "wrap"}}>
             {projects.map((projects) =>
-                <div className="row">
-                    <div className="col">
+                // <div className="row">
+                    <div className="col-4">
                         <div className="card" style={{ "width": "18rem" }}>
                             <div className="card-body">
                                 <h5 className="card-title">{projects.name}</h5>
@@ -67,7 +68,7 @@ function Project() {
                                 <a href="#" className="card-link">Deployed Link</a>
                             </div>
                         </div>
-                    </div>
+                    {/* </div> */}
                 </div>)}
         </div>
     )

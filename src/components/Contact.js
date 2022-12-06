@@ -44,15 +44,15 @@ function Contact() {
     return (
         <div>
             <form className="container" onSubmit={handleSubmit}>
-                <div className="form-group">
+                <div className="form-group text-white">
                     <label for="exampleFormControlInput1" defaultValue={name}>Name</label>
                     <input onBlur={handleChange} type="name" className="form-control" id="exampleFormControlInput1" placeholder="John Doe"></input>
                 </div>
-                <div className="form-group">
+                <div className="form-group text-white">
                     <label for="exampleFormControlInput1" defaultValue={email}>Email address</label>
                     <input onBlur={handleChange}type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"></input>
                 </div>
-                <div className="form-group">
+                <div className="form-group text-white">
                     <label for="exampleFormControlTextarea1">Leave a message!</label>
                     <textarea onBlur={handleChange}className="form-control" id="exampleFormControlTextarea1" rows="3" defaultValue={message}></textarea>
                 </div>
