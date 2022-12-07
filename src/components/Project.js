@@ -16,38 +16,38 @@ function Project() {
     const projects = [
         {
             name: 'Dream Job Finder',
-            deployed_link: '',
-            github_repo: '',
+            deployed_link: 'https://sheetaljwl795.github.io/dream-job-finder/',
+            github_repo: 'https://github.com/sheetaljwl795/dream-job-finder',
             image: dreamJob,
         },
         {
             name: 'ECommerce Back-End',
-            deployed_link: '',
-            github_repo: '',
+            deployed_link: 'https://drive.google.com/file/d/1TGkN8rg70QSiJsBA62dwMDIu5HDTqDYw/viewLinks to an external site.',
+            github_repo: 'https://github.com/GarzaNate/E-Commerce-Backend',
             image: eCommerce,
         },
         {
             name: 'Employee Tracker',
-            deployed_link: '',
-            github_repo: '',
+            deployed_link: 'https://drive.google.com/file/d/1If8XyUEfQNAAEQkPYaI1k4XcDJMGwumD/view',
+            github_repo: 'https://github.com/GarzaNate/Employee-tracker',
             image: employeeTracker,
         },
         {
             name: 'Jate Text Editor',
-            deployed_link: '',
-            github_repo: '',
+            deployed_link: 'https://desolate-citadel-42669.herokuapp.com/Links to an external site.',
+            github_repo: 'https://github.com/GarzaNate/Jate-Text-Editor',
             image: textEditor,
         },
         {
             name: 'Note Taker App',
             deployed_link: '',
-            github_repo: '',
+            github_repo: 'https://github.com/GarzaNate/Note-taker',
             image: noteTaker,
         },
         {
             name: 'Team Generator',
             deployed_link: '',
-            github_repo: '',
+            github_repo: 'https://github.com/GarzaNate/team-profile-generator',
             image: teamGenerator,
         },
     ]
@@ -64,8 +64,8 @@ function Project() {
                             </div>
                             <img className="card-img-top" src={projects.image} alt="Project Pictures"></img>
                             <div className="card-body">
-                                <a href="#" className="card-link">Github Repo</a>
-                                <a href="#" className="card-link">Deployed Link</a>
+                                <a href={projects.github_repo} className="card-link">Github Repo</a>
+                                <a href={projects.deployed_link} className="card-link">Deployed Link</a>
                             </div>
                         </div>
                     {/* </div> */}
