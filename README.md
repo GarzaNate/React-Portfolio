@@ -29,3 +29,4 @@ Just me!
 ## Contact
 * Email: nategarza2410@gmail.com
 * Github: GarzaNate
+![portfolio](https://user-images.githubusercontent.com/97882512/206092750-55151314-9f74-494b-8752-8843be742d93.png)
