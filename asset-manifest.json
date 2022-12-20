@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.6994fe34.css",
+    "main.js": "/React-Portfolio/static/js/main.976caab6.js",
+    "static/js/787.a2cb61a6.chunk.js": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/dreamJob.png": "/React-Portfolio/static/media/dreamJob.e040cc936f46c0315a19.png",
+    "static/media/employeeTracker.png": "/React-Portfolio/static/media/employeeTracker.0cfdbb8341496857e734.png",
+    "static/media/eCommerceRoute.png": "/React-Portfolio/static/media/eCommerceRoute.7083b191706cfc04184a.png",
+    "static/media/teamGenerator.png": "/React-Portfolio/static/media/teamGenerator.da92f6be9fb7340bc481.png",
+    "static/media/noteTakerApp.png": "/React-Portfolio/static/media/noteTakerApp.8aa382bc093560168963.png",
+    "static/media/jateTextEditor.png": "/React-Portfolio/static/media/jateTextEditor.ecb42dccfa029fc33b4d.png",
+    "index.html": "/React-Portfolio/index.html",
+    "main.6994fe34.css.map": "/React-Portfolio/static/css/main.6994fe34.css.map",
+    "main.976caab6.js.map": "/React-Portfolio/static/js/main.976caab6.js.map",
+    "787.a2cb61a6.chunk.js.map": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6994fe34.css",
+    "static/js/main.976caab6.js"
+  ]
+}
